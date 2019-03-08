@@ -92,13 +92,17 @@ git push -u origin master //把本地库的所有内容推送到远程库上
 在github上只能删除仓库,却无法删除文件夹或文件, 所以只能通过命令来解决
 
  
-删除仓库中的某个文件夹操作
+删除仓库中的某个文件夹操作指令
 首先进入你的master文件夹下, Git Bash Here ,打开命令窗口
 
 $ git --help                                      # 帮助命令
+
 $ git pull origin master                    # 将远程仓库里面的项目拉下来
-$ dir                                                # 查看有哪些文件夹
+
+$ dir                                                # 查看有哪些文件夹 
+
 $ git rm -r --cached foldername              # 删除target文件夹
+
 $ git commit -m '删除了target'        # 提交,添加操作说明
 
 $ git push -u origin master               # 将本次更改更新到github项目上去
